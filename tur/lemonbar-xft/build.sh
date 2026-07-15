@@ -15,5 +15,6 @@ TERMUX_PKG_BUILD_IN_SRC=true
 TERMUX_PKG_EXTRA_MAKE_ARGS="PREFIX=$TERMUX_PREFIX"
 
 termux_step_pre_configure() {
-    sed -i "s|/usr/include/freetype2|$TERMUX_PREFIX/include/freetype2|g" Makefile
+	sed -i "s|/usr/include/freetype2|$TERMUX_PREFIX/include/freetype2|g" Makefile
 }
+
